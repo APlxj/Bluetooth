@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/et_code"
+    android:orientation="horizontal"
+    android:padding="@dimen/height2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/height20"
+            android:layout_marginTop="@dimen/height20"
+            android:padding="@dimen/height20"
+            android:text="Send Msg" />
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height150"
+            android:layout_margin="@dimen/height20"
+            android:background="@drawable/et_code"
+            android:hint="Put Msg"
+            android:padding="@dimen/height20"
+            android:textColorHint="#A8A8A8" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/height1"
+        android:layout_height="match_parent"
+        android:background="#444444" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:text="取消"
+            android:textColor="#565656" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height1"
+            android:layout_marginLeft="@dimen/height20"
+            android:layout_marginRight="@dimen/height20"
+            android:background="#444444" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:text="发送"
+            android:textColor="#30B2B2" />
+    </LinearLayout>
+</LinearLayout>

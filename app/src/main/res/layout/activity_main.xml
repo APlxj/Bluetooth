@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.ap.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height140"
+            android:background="#D8D8D8"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/height25"
+                android:text="@string/bluetooth"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/height20"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/btn_selected"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height20"
+                android:layout_marginTop="@dimen/height20"
+                android:background="#FFFFFF"
+                android:text="现在可被为 “vivo X9Plus”"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height60"
+                android:background="#D8D8D8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/height20"
+                android:paddingTop="@dimen/height20">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height20"
+                    android:layout_weight="1"
+                    android:text="设备名称"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_localname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/height20"
+                    android:text="vivo X9Plus"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/height20"
+                android:layout_marginRight="@dimen/height20"
+                android:background="#333" />
+
+            <LinearLayout
+                android:id="@+id/ll_closetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D8D8D8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/height20"
+                android:paddingTop="@dimen/height20">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height20"
+                    android:layout_weight="1"
+                    android:text="空闲时自动关闭"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_closetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/height20"
+                    android:text="手动关闭"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height60"
+                android:background="#D8D8D8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/height20"
+                android:paddingTop="@dimen/height20">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height20"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="搜索蓝牙设备"
+                    android:textColor="#30B2B2"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/height20"
+                android:layout_marginTop="@dimen/height60"
+                android:background="#FFFFFF"
+                android:text="已配对设备"
+                android:textSize="18sp" />
+
+            <com.ap.view.MeasureListView
+                android:id="@+id/list_bond"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height20"
+                android:layout_marginRight="@dimen/height20"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height20"
+                    android:layout_marginTop="@dimen/height50"
+                    android:background="#FFFFFF"
+                    android:text="可用设备"
+                    android:textSize="18sp" />
+
+                <ProgressBar
+                    android:id="@+id/myprobar"
+                    style="?android:attr/progressBarStyleInverse"
+                    android:layout_width="@dimen/height50"
+                    android:layout_height="@dimen/height50"
+                    android:layout_marginLeft="@dimen/height20"
+                    android:layout_marginTop="@dimen/height55"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.ap.view.MeasureListView
+                android:id="@+id/list_found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/height20"
+                android:layout_marginRight="@dimen/height20" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
