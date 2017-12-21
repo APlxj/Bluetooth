@@ -9,13 +9,13 @@ import android.widget.TextView;
 
 import com.example.mybluetoothchat.R;
 import com.example.mybluetoothchat.ChatMsgEntity;
+
 import java.util.List;
 
 
-public class ChatMsgViewAdapter extends BaseAdapter{
+public class ChatMsgViewAdapter extends BaseAdapter {
 
-    public static interface IMsgViewType
-    {
+    public static interface IMsgViewType {
 
         int IMVT_COM_MSG = 0;
 
@@ -53,10 +53,9 @@ public class ChatMsgViewAdapter extends BaseAdapter{
         // TODO Auto-generated method stub
         ChatMsgEntity entity = data.get(position);
 
-        if (entity.getMsgType())
-        {
+        if (entity.getMsgType()) {
             return IMsgViewType.IMVT_COM_MSG;
-        }else{
+        } else {
             return IMsgViewType.IMVT_TO_MSG;
         }
 
@@ -68,19 +67,16 @@ public class ChatMsgViewAdapter extends BaseAdapter{
         return 2;
     }
 
-
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ChatMsgEntity entity = data.get(position);
         boolean isComMsg = entity.getMsgType();
 
         ViewHolder viewHolder = null;
-        if (convertView == null)
-        {
-            if (isComMsg)
-            {
+        if (convertView == null) {
+            if (isComMsg) {
                 convertView = mInflater.inflate(R.layout.chatting_item_msg_text_left, null);
-            }else{
+            } else {
                 convertView = mInflater.inflate(R.layout.chatting_item_msg_text_right, null);
             }
 
@@ -91,7 +87,7 @@ public class ChatMsgViewAdapter extends BaseAdapter{
             viewHolder.isComMsg = isComMsg;
 
             convertView.setTag(viewHolder);
-        }else{
+        } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         viewHolder.tvSendTime.setText(entity.getDate());
