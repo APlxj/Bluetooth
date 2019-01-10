@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/androidBluetooch" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bluetoothreceive" />
+            <option value="$PROJECT_DIR$/hC_BLE" />
             <option value="$PROJECT_DIR$/smaple" />
           </set>
         </option>

@@ -1,1 +1,3 @@
-include ':app', ':smaple'
+include ':app', ':smaple', ':bluetoothreceive'
+include ':androidBluetooch'
+include ':hC_BLE'

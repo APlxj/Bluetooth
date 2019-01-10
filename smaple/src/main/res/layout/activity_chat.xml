@@ -26,6 +26,8 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_toLeftOf="@id/btn_send"
+            android:digits="0123456789.-"
+            android:maxLength="6"
             android:singleLine="true"
             android:textSize="18sp" />
     </RelativeLayout>

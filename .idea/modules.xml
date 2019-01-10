@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Bluetooth.iml" filepath="$PROJECT_DIR$/Bluetooth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidBluetooch/androidBluetooch.iml" filepath="$PROJECT_DIR$/androidBluetooch/androidBluetooch.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bluetoothreceive/bluetoothreceive.iml" filepath="$PROJECT_DIR$/bluetoothreceive/bluetoothreceive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hC_BLE/hC_BLE.iml" filepath="$PROJECT_DIR$/hC_BLE/hC_BLE.iml" />
       <module fileurl="file://$PROJECT_DIR$/smaple/smaple.iml" filepath="$PROJECT_DIR$/smaple/smaple.iml" />
     </modules>
   </component>

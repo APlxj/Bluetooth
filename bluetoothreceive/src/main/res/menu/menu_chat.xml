@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mybluetoothchat.ChatActivity">
+
+    <item
+        android:id="@+id/action_show_bluetooth"
+        android:orderInCategory="100"
+        android:title="让本设备可见"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_connect"
+        android:orderInCategory="100"
+        android:title="建立蓝牙连接"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_out"
+        android:orderInCategory="100"
+        android:title="退出"
+        app:showAsAction="never" />
+</menu>

@@ -25,12 +25,12 @@
 
         <ImageView
             android:id="@+id/iv_userhead"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:focusable="false"
-            android:src="@drawable/icon" />
+            android:src="@drawable/givemsg" />
 
         <TextView
             android:id="@+id/tv_chatcontent"
@@ -38,7 +38,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/iv_userhead"
-            android:background="@drawable/chatfrom_bg"
             android:clickable="true"
             android:focusable="true"
             android:gravity="left|center"
